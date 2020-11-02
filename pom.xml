@@ -409,6 +409,7 @@
                             </resource>
                         </resources>
                     </deployment>
+                    <stopAppDuringDeployment>true</stopAppDuringDeployment>
                 </configuration>
             </plugin>
             <!-- jhipster-needle-maven-add-plugin -->
