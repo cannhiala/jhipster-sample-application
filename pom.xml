@@ -390,7 +390,7 @@
                 <configuration>
                     <schemaVersion>V2</schemaVersion>
                     <resourceGroup>webapp-jhipster</resourceGroup>
-                    <appName>webjhipster01</appName>
+                    <appName>webserver-cicd</appName>
                     <!-- Begin of App Settings  -->
 				    <appSettings>
 				     <property>
@@ -399,26 +399,6 @@
 				     </property>
 				    </appSettings>
 				    <!-- End of App Settings  -->
-                    <deployment>
-                        <resources>
-                            <resource>
-                            <directory>${project.basedir}/target</directory>
-                            <includes>
-                                <include>*.jar</include>
-                            </includes>
-                            </resource>
-                        </resources>
-                    </deployment>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.microsoft.azure</groupId>
-                <artifactId>azure-webapp-maven-plugin</artifactId>
-                <version>1.8.0</version>
-                <configuration>
-                    <schemaVersion>V2</schemaVersion>
-                    <resourceGroup>webapp-jhipster</resourceGroup>
-                    <appName>webjhipster01</appName>
                     <deployment>
                         <resources>
                             <resource>
