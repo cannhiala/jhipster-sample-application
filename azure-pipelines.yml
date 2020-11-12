@@ -36,7 +36,8 @@ jobs:
         displayName: 'TESTS: frontend'
       - script: ./mvnw verify -Pprod -DskipTests
         displayName: 'TESTS: packaging
-    - task: AzureWebAppContainer@1
-      inputs:
-        azureSubscription: 'Free Trial (33e95408-e811-4e13-b0c1-4916e3ba927c)'
-        appName: 'jhipstercicd'
+      - task: AzureWebAppContainer@1
+        inputs:
+          azureSubscription: 'Free Trial (33e95408-e811-4e13-b0c1-4916e3ba927c)'
+          appName: 'jhipstercicd'
+          containers: 'jhipsterimages'
