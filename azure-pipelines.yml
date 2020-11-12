@@ -20,3 +20,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial (33e95408-e811-4e13-b0c1-4916e3ba927c)'
+    appType: 'webAppLinux'
+    WebAppName: 'webserver-cicd'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
