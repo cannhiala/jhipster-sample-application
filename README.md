@@ -165,7 +165,7 @@ docker-compose -f src/main/docker/mysql.yml up -d
 To stop it and remove the container, run:
 
 ```
-docker-compose -f src/main/docker/mysql.yml down
+docker-compose -f src/main/docker/mysql.yml down1
 ```
 
 You can also fully dockerize your application and all the services that it depends on.
