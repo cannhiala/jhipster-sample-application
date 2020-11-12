@@ -34,5 +34,6 @@ jobs:
           command: 'custom'
           customCommand: 'run test-ci'
         displayName: 'TESTS: frontend'
-      - script: ./mvnw -ntp verify -Pprod -DskipTests
+     # - script: ./mvnw -ntp verify -Pprod -DskipTests
+       - script: ./mvnw clean verify -Pprod -DskipTests
         displayName: 'TESTS: packaging'
