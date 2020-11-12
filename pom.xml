@@ -395,7 +395,7 @@
 				    <appSettings>
 				     <property>
 				       <name>JAVA_OPTS</name>
-				       <value>-Dserver.port=80  -Djava.net.preferIPv4Stack=true</value>
+				       <value>-Dserver.port=81  -Djava.net.preferIPv4Stack=true</value>
 				     </property>
 				    </appSettings>
 				    <!-- End of App Settings  -->
